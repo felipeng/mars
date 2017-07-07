@@ -24,6 +24,13 @@ Enviar robô para posição:
 * (0,2,W) = `curl -s --request POST http://localhost:8080/rest/mars/MML`
 * (4,4,E) = `curl -s --request POST http://localhost:8080/rest/mars/MMRMMLMMRMM`
 
+## Testes
+
+Foi desenvolvido um shell-script para facilitar a rotina de testes, para utilizar:
+
+1. Iniciar o servidor REST
+1. Executar: `bash mars/dev/test.sh`
+
 ## Docker Image
 
 Foi criado um container docker para facilitar a utilização. Para executar o container, execute:
