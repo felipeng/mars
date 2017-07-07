@@ -1,6 +1,12 @@
 # Mars Exploration
 
 Interface REST para controlar o robô de exploração do terreno em Marte.
+Foi utilizar o [Bottle: Python Web Framework](http://bottlepy.org/docs/dev/)
+
+## Instalação
+
+1. Baixar o código: `git clone https://github.com/felipeng/mars.git`
+1. Iniciar o servidor: `python mars/app/mars.py`
 
 ## Como utilizar
 
