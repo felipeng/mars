@@ -35,7 +35,7 @@ Foi desenvolvido um shell-script para facilitar a rotina de testes, para utiliza
 
 Foi criado um container docker para facilitar a utilização. Para executar o container, execute:
 
-`docker run -ti --rm -p 8080:8080 felipeng/mars`
+`docker run -ti --rm -p 8080:8080 felipeng/mars:latest`
 
 # License
 
