@@ -21,6 +21,7 @@ Enviar robô para posição:
 ## Docker Image
 
 Foi criado um container docker para facilitar a utilização. Para executar o container, execute:
+
 `docker run -ti --rm -p 8080:8080 felipeng/mars`
 
 # License
