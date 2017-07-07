@@ -23,6 +23,9 @@ Enviar robô para posição:
 * (2,0,S) = `curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM`
 * (0,2,W) = `curl -s --request POST http://localhost:8080/rest/mars/MML`
 * (4,4,E) = `curl -s --request POST http://localhost:8080/rest/mars/MMRMMLMMRMM`
+* 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/AAAA`
+* 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/MMMMM`
+* 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/MLX`
 
 ## Testes
 
