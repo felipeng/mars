@@ -1,5 +1,8 @@
 FROM alpine:3.5
 MAINTAINER felipeng84@gmail.com
 RUN apk add --no-cache python2
-ADD https://github.com/felipeng/mars/archive/master.zip /www
-ENTRYPOINT ["/usr/bin/python /www/app/mars.py"]
+RUN mkdir -p /www
+ADD https://github.com/felipeng/mars/archive/master.tar.gz /www
+RUN mv /www/mars-master /www/mars
+EXPOSE 8080
+ENTRYPOINT ["/usr/bin/python","/www/mars/app/mars.py"]
