@@ -14,7 +14,9 @@ services: docker
 install: "pip install -r requirements.txt"
 script: 
   - bash test/test.sh
-  - docker build -t felipeng/mars:latest .
 after_success:
-    - docker login -u="$DOCKER_HUB_USER" -p="$DOCKER_HUB_PASS"
-    - docker push felipeng/mars:latest
+    - if [ "${TRAVIS_PYTHON_VERSION}" = "2.7" ]; then
+        docker login -u="$DOCKER_HUB_USER" -p="$DOCKER_HUB_PASS"
+        docker build -t felipeng/mars:latest .
+        docker push felipeng/mars:latest
+      fi
