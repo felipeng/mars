@@ -32,7 +32,7 @@ Enviar robô para posição:
 
 ## Docker Image
 
-Foi criado um container docker para facilitar a utilização. Para executar o container, execute:
+Foi criado uma imagem docker para facilitar a utilização. Parutilizar a imagem, execute:
 
 `docker run -ti --rm -p 8080:8080 felipeng/mars:latest`
 
