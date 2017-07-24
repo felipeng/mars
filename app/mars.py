@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from lib.bottle import post, run, response
+from bottle import post, run, response
 
 @post('/rest/mars/<commands>')
 def robot(commands):
@@ -44,6 +44,7 @@ def robot(commands):
                 return "400 Bad Request"
 
         # retorna posicao final
-        return ("({},{},{})".format(axisX, axisY, direction))
+        return ("(%s,%s,%s)" % (axisX, axisY, direction))
 
-run(host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    run(host='0.0.0.0', port=8080)

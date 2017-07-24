@@ -1,5 +1,7 @@
 # Mars Exploration
 
+[![Build Status](https://travis-ci.org/felipeng/mars.svg?branch=master)](https://travis-ci.org/felipeng/mars)
+
 Interface REST para controlar o robô de exploração do terreno em Marte.
 Foi utilizar o [Bottle: Python Web Framework](http://bottlepy.org/docs/dev/)
 
@@ -26,13 +28,6 @@ Enviar robô para posição:
 * 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/AAAA`
 * 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/MMMMM`
 * 400 Bad Request = `curl -s --request POST http://localhost:8080/rest/mars/MLX`
-
-## Testes
-
-Foi desenvolvido um shell-script para facilitar a rotina de testes, para utilizar:
-
-1. Iniciar o servidor REST
-1. Executar: `bash mars/dev/test.sh`
 
 ## Docker Image
 
