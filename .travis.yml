@@ -9,5 +9,11 @@ python:
   - "3.6"
   - "3.7-dev" # 3.7 development branch
   - "nightly" # currently points to 3.7-dev
+sudo: required
+services: docker
 install: "pip install -r requirements.txt"
 script: bash test/test.sh
+after_success:
+    - docker login -u="$DOCKER_HUB_USER" -p="$DOCKER_HUB_PASS"
+    - docker build -t felipeng/mars:latest .
+    - docker push felipeng/mars:latest
