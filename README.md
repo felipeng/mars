@@ -1,6 +1,7 @@
 # Mars Exploration
 
 [![Build Status](https://travis-ci.org/felipeng/mars.svg?branch=master)](https://travis-ci.org/felipeng/mars)
+[![GitHub release](https://img.shields.io/github/release/felipeng/mars.svg)](https://github.com/felipeng/mars/releases/latest)
 
 Interface REST para controlar o robô de exploração do terreno em Marte.
 Foi utilizar o [Bottle: Python Web Framework](http://bottlepy.org/docs/dev/)
